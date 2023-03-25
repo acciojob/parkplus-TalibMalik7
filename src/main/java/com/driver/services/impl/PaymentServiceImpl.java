@@ -5,7 +5,7 @@ import com.driver.model.PaymentMode;
 import com.driver.model.Reservation;
 import com.driver.repository.PaymentRepository;
 import com.driver.repository.ReservationRepository;
-// import com.driver.services.PaymentService;
+import com.driver.services.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,7 +23,7 @@ public class PaymentServiceImpl implements PaymentService {
 
         int billPrice = reservation.getNumberOfHours()*reservation.getSpot().getPricePerHour();
         if(amountSent < billPrice){
-            throw new Exception("Insufficient Amount");
+            throw new Exception("Insufficient Amountt");
         }
         else{
 

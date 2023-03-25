@@ -2,6 +2,7 @@ package com.driver.controllers;
 
 import com.driver.repository.ParkingLotRepository;
 import com.driver.services.ParkingLotService;
+import com.driver.model.ParkingLot;
 import com.driver.services.impl.ParkingLotServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
